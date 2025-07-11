@@ -1,0 +1,44 @@
+:root{
+    --mainColor: #3778FA;
+    --backgroundColor: #FFF;
+    --textColorLight: #000;
+    --textColorContrast: #FFF;
+    --mapsColor: #A0DA7A;
+    --faqColor: #F3F3F3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--backgroundColor);
+    color: var(--textColorLight);
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.25rem;
+}
+
+header #menuDesktop{
+    display: none;
+}
+
+header #menuMobile{
+    width: 1.25rem;
+    height: 0.75rem;
+}
+
+header button{
+    background-color: var(--backgroundColor);
+    border: 0;
+}
