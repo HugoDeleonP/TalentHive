@@ -5,6 +5,7 @@
     --textColorContrast: #FFF;
     --mapsColor: #A0DA7A;
     --faqColor: #F3F3F3;
+    --fontPage: 'Space Grotesk', sans-serif;
 }
 
 *{
@@ -16,17 +17,31 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-size: calc(1rem - 0.125rem);
+    font-weight: 500;
+    line-height: calc(1rem + 0.375rem);
+}
+
 body{
     background-color: var(--backgroundColor);
     color: var(--textColorLight);
-
+    font-family: var(--fontPage);
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 1.25rem;
+}
+
+#logo{
+    color: var(--mainColor);
+    font-size: 1.25rem;
 }
 
 header #menuDesktop{
@@ -34,6 +49,11 @@ header #menuDesktop{
 }
 
 header #menuMobile{
+    width: 1.25rem;
+    height: 0.75rem;
+}
+
+header button{
     width: 1.25rem;
     height: 0.75rem;
 }
