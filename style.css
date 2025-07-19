@@ -361,5 +361,29 @@ hr{
 }
 
 @media (min-width: 1920px){
-    
+    #menuMobile{
+        display: none;
+    }
+
+    header #menuDesktop{
+        display: flex;
+    }
+
+    #menuDesktop{
+        display: flex;
+        font-size: 1.125rem;
+    }
+
+    #menuDesktop ul, #menuDesktop a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #menuDesktop ul{
+        align-self: center;
+    }
+
+
 }
