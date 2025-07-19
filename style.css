@@ -22,12 +22,21 @@ html{
 }
 
 @font-face {
+    font-family: 'Space Grotesk Foot';
+    src: url('fonts/SpaceGrotesk-Light.ttf') format(truetype);
+    font-size: calc(1rem - 0.125rem);
+    font-weight: 500;
+    line-height: calc(1rem + 0.375rem);
+}
+
+@font-face {
     font-family: 'Space Grotesk';
     src: url('fonts/SpaceGrotesk-Medium.ttf') format('truetype');
     font-size: calc(1rem - 0.125rem);
-    font-weight: 400;
+    font-weight: 500;
     line-height: calc(1rem + 0.375rem);
 }
+
 
 
 body{
@@ -64,7 +73,7 @@ header{
 
 }
 
-#logo{
+.logo{
     color: var(--mainColor);
     font-size: 1.25rem;
     font-style: normal;
@@ -117,8 +126,23 @@ section p{
 }
 
 section h2{
+    display: block;
+
     font-weight: 575;
     font-size: 2.5rem;
+
+    width: 22.06rem;
+    height: 7rem;
+}
+
+main h3:first-child{
+    width: 20.19rem;
+    height: 5.25rem;
+}
+
+main h3:last-child{
+    width: 15.25rem;
+    height: 5.25rem;
 }
 
 body img{
@@ -142,13 +166,14 @@ body img{
     height: 45.7rem;
     border-radius: 1.25rem;
 
-    padding: 3.13rem 1.38rem 4.38rem 1.38rem;
+    padding: 3.13rem 1.38rem 1.38rem;
     margin-top: 1.81rem;
+    margin-bottom: 6.25rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #faq img{
@@ -157,9 +182,15 @@ body img{
 }
 
 .ask{
+    display: block;
+
     background-color: var(--backgroundColor);
     border-radius: 0.5rem;
     padding: 1.06rem 3.5rem 1.06rem 0.7rem; 
+    width: 21.5rem;
+    height: 3.375rem;
+
+    
 }
 
 .ask span{
@@ -169,18 +200,46 @@ body img{
     
 }
 
+.symbol{
+    display: block inline;
+    text-align: end;
+
+}
+
+#description{
+    height: 4.875rem;
+}
+
+#description::after{
+    content: 'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.';
+    display: block;
+    width: 14.1875rem;
+    height: 2.125rem;
+
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.01563rem;
+    color: #65676c;
+}
+
 footer, footer p, footer a, footer h2, footer h4{
     background-color: var(--mainColor);
     color: var(--textColorContrast);
     border-radius: 1.25rem 1.25rem 0rem 0rem;
+        
+    font-family: 'Space Grotesk Foot';
+}
+
+footer a.btn, footer h2{
+    font-family: 'Space Grotesk';
 }
 
 footer #conclusion{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1.5fr 0.5fr 1fr;
     margin-left: 1.31rem;
-    gap: 0.5rem;
+    gap: 1.31rem;
 
 }
 
@@ -213,4 +272,94 @@ footer #conclusion .btn{
     justify-content: center;
     align-items: center;
     margin: 1.19rem 0rem 5rem;
+}
+
+hr{
+    width: 24.25rem;
+    height: 0.0625rem;
+    margin: auto;
+}
+
+#miscellaneous{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(8, auto);
+    justify-content: center;
+
+    margin-top: 4.94rem;
+    padding-right: 1.31rem;
+    padding-left: 1.25rem;
+}
+
+#miscellaneous a, #miscellaneous p, #miscellaneous h4, #miscellaneous li{
+    text-align: start;
+    align-self: center;
+    font-style: normal;
+}
+
+#miscellaneous li{
+    margin: 1rem 0;
+}
+
+#slogan{
+    grid-column: 1 / 3;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+#slogan p{
+    margin-top: 1.06rem;
+}
+
+#pages1{
+    grid-column: 4;
+}
+
+#pages2{
+}
+
+#rights{
+    grid-column: 2/4;
+}
+
+#socialMedia{
+
+}
+
+#copyright-adress{
+    grid-column: 1/5;
+}
+
+#miscellaneous h4.logo, #slogan p{
+    color: #FFF;
+}
+
+#copyright-adress p, #rights li{
+    text-align: center;
+} 
+
+#socialMedia li{
+    align-self: end;
+}
+
+#copyright-adress p{
+    margin: 1.25rem 0rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0.02188rem;
+}
+
+#copyright-adress span{
+    color: var(--mapsColor);
+}
+
+@media (min-width: 1080px) {
+    
+}
+
+@media (min-width: 1920px){
+    
 }
